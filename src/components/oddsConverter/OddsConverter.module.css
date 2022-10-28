@@ -1,0 +1,23 @@
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+
+.firstColumn {
+    width: 30%;
+}
+
+.secondColumn {
+    width: 30%;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    background-color: #F08080;
+    border-radius: 6px;
+    margin: 2% 20% 0 20%;
+    font-size: 18px;
+}
+

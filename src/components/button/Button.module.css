@@ -1,0 +1,30 @@
+.btnGroup button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+    height: 42px;
+    margin: 5px auto;
+    background: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+button:hover {
+    background-color: #cbd1d8;
+}
+
+.resBtn {
+    align-items: center;
+}
