@@ -15,15 +15,15 @@ export const ResultsPanel = (props: PropsType) => {
       <div className={style.resBlock}>
         <div>
           <span>Total Stake</span>
-          <p>{`$ ${props.winning !== 0 ? props.stake : '0.00'}`}</p>
+          <p><b>{`$ ${props.winning !== 0 ? props.stake : '0.00'}`}</b></p>
         </div>
         <div>
           <span>To Win</span>
-          <p>{`$ ${props.winning.toFixed(2)}`}</p>
+          <p><b>{`$ ${props.winning.toFixed(2)}`}</b></p>
         </div>
         <div>
           <span>Payout</span>
-          <p>{`$ ${props.winning !== 0 ? (+props.stake + props.winning).toFixed(2) : '0.00'}`}</p>
+          <p><b>{`$ ${props.winning !== 0 ? (+props.stake + props.winning).toFixed(2) : '0.00'}`}</b></p>
         </div>
       </div>
       <Button title={'Reset'} onButtonClick={props.resetFunc}/>

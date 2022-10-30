@@ -5,7 +5,6 @@ type PropsType = {
 }
 
 export const DescriptionPanel = (props: PropsType) => {
-  console.log(props.description)
   return (
     <div className={style.description}>
       {props.description === 'American odds' &&

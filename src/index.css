@@ -32,15 +32,20 @@ input {
   width: 20%;
   height: 33px;
   margin: 1px 1px 10px 1px;
-  background: #ffffff;
+  background: #F8F8F8;
   border-radius: 5px;
   cursor: text;
   font-size: 18px;
 }
+
 input[type=number] {
   width: 60%;
 }
 
 input[type=text] {
   width: 60%;
+}
+
+input:focus {
+  background: #ffffff;
 }

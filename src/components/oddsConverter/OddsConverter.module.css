@@ -1,7 +1,6 @@
 .row {
     display: flex;
     justify-content: space-evenly;
-    border: 1px solid black;
 }
 
 .firstColumn {
@@ -12,12 +11,17 @@
     width: 30%;
 }
 
+form {
+    text-align: center;
+}
+
 .error {
     display: flex;
+    width: 60%;
     justify-content: center;
     background-color: #F08080;
     border-radius: 6px;
-    margin: 2% 20% 0 20%;
+    margin: 1% 20% 1% 20%;
     font-size: 18px;
 }
 

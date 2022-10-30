@@ -20,7 +20,6 @@ export const OddsConverter = (props: PropsType) => {
   return (
     <div className={style.wrapper}>
       <h1>Odds calculator</h1>
-
       <form name="form">
         <div className={style.row}>
           <div className={style.firstColumn}>
@@ -53,7 +52,7 @@ export const OddsConverter = (props: PropsType) => {
                              onInputValueChange={props.changeImpliedOdds}/>
           </div>
         </div>
-        <div className={style.error}>{props.error}</div>
+        {props.error && <div className={style.error}>{props.error}</div>}
       </form>
     </div>
   )
