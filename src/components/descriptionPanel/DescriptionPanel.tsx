@@ -1,3 +1,4 @@
+import { Ball } from "../ball/Ball";
 import style from "./DescriptionPanel.module.css";
 
 type PropsType = {
@@ -44,6 +45,7 @@ export const DescriptionPanel = (props: PropsType) => {
             the ‘true odds’ of an event occurring.</p>
         </div>
       }
+      <Ball/>
     </div>
   )
 }

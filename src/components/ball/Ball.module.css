@@ -1,0 +1,65 @@
+.ballSection {
+    --height: 400px;
+    --size: 100px;
+    --speed: 3s;
+    height: var(--height);
+}
+.posX {
+    animation-name: moveX;
+    animation-duration:var(--speed);
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.posY {
+    animation-name: moveY;
+    animation-duration:calc(var(--speed) * 0.725);
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.ball {
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    overflow: hidden;
+    animation-name: ballHeight;
+    animation-duration: calc(var(--speed) / 2);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.light {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 20% 20%, rgba(255, 255, 255,.7), rgba(255, 255, 255,.5) 10%, transparent 30% ,rgba(0,0,0,.6) 85%);
+}
+.ballShape {
+    height: 100%;
+    background-color: #FFF;
+    background-image: url(../../assets/img/ball.png);
+    background-size: 100%;
+    animation-name: spinBall;
+    animation-duration: var(--speed);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes moveX {
+    0% {transform:translateX(0)}
+    100% {transform:translateX(calc(100% - var(--size)))}
+}
+@keyframes moveY {
+    0% {transform:translateY(0);}
+    100% {transform:translateY(calc(var(--height) - var(--size)))}
+}
+@keyframes spinBall {
+    to {transform:rotate(360deg);}
+}
+@keyframes ballHeight {
+    from {transform:scale(1);filter:drop-shadow(0 0 0 rgba(0,0,30,.4))}
+    to{transform:scale(1.3);filter:drop-shadow(calc(var(--size) * .8) calc(var(--size) * .8) 10px rgba(0,0,30,.4))}
+}
