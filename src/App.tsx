@@ -13,7 +13,7 @@ function App() {
   const [impliedOdds, setImpliedOdds] = useState<string>('')
   const [winning, setWinning] = useState<number>(0)
   const [error, setError] = useState<string | null>(null)
-  const [description, setDescription] = useState<string>('')
+  const [description, setDescription] = useState<string>('Greetings')
 
   const changeStake = (e: ChangeEvent<HTMLInputElement>) => {
     setStake(e.currentTarget.value)
@@ -150,7 +150,7 @@ function App() {
     setFractionalOdds('')
     setWinning(0)
     setError(null)
-    setDescription('')
+    setDescription('Greetings')
   }
 
   return (

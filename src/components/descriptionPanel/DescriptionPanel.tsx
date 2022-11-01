@@ -8,6 +8,11 @@ type PropsType = {
 export const DescriptionPanel = (props: PropsType) => {
   return (
     <div className={style.description}>
+      {props.description === 'Greetings' &&
+        <div>
+          <h2>Hey player!</h2>
+          <p>The betting odds calculator allows you to input your stake & odds in American, Decimal, Implied, or Fractional formats to quickly calculate the payout for your bets!</p>
+        </div>}
       {props.description === 'American odds' &&
         <div>
           <h2>American odds</h2>
