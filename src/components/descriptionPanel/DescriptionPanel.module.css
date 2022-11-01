@@ -1,4 +1,6 @@
 .description {
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
     border: 2px solid black;
     width: 30%;
@@ -7,4 +9,11 @@
     border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
+}
+
+@media (max-width: 1020px) {
+    .description {
+        width: 80%;
+        align-self: center;
+    }
 }

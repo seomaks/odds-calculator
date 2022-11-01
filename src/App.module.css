@@ -9,3 +9,12 @@
     justify-content: space-evenly;
     width: 60%;
 }
+
+@media (max-width: 1020px) {
+    .calculator {
+        flex-direction: column;
+    }
+    .counter {
+        width: 100%;
+    }
+}
