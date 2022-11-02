@@ -2,7 +2,7 @@
 
 Front End application allows sports bettors to enter bets and odds in American, Decimal, Implied, or Fractional formats to quickly calculate the bet payout!
 
-![giphy](https://user-images.githubusercontent.com/90976795/199565450-00cc25fb-52a1-4be8-9b65-fe77cee13848.gif)
+![betting](https://user-images.githubusercontent.com/90976795/199573088-eb293d86-0e05-4bb3-a19f-76327036db33.gif)
 
 ## Technologies used
 <ul>
