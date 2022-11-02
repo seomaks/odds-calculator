@@ -4,6 +4,7 @@
     --speed: 3s;
     height: var(--height);
 }
+
 .posX {
     animation-name: moveX;
     animation-duration:var(--speed);
