@@ -1,4 +1,4 @@
-import { Ball } from "../ball/Ball";
+import {Ball} from "../ball/Ball";
 import style from "./DescriptionPanel.module.css";
 
 type PropsType = {
@@ -11,24 +11,27 @@ export const DescriptionPanel = (props: PropsType) => {
       {props.description === 'Greetings' &&
         <div>
           <h2>Hey player!</h2>
-          <p>The betting odds calculator allows you to input your stake & odds in American, Decimal, Implied, or Fractional formats to quickly calculate the payout for your bets!</p>
+          <p>The betting odds calculator allows you to input your stake & odds
+            in American, Decimal, Implied, or Fractional formats to quickly
+            calculate the payout for your bets!</p>
         </div>}
       {props.description === 'American odds' &&
         <div>
           <h2>American odds</h2>
-          <p>Also known as US odds or moneyline odds, American odds are the
-            default betting odds used by American sportsbooks. American odds are
-            centered around winning or wagering $100 on a given bet, with odds
-            represented by a plus (+) and minus (-) sign to indicate the
-            favorite and underdog.</p>
+          <p>American odds (moneyline odds) are mainly used by American
+            bookmakers. American odds are probably the easiest odds format to
+            understand, as the odds are displayed using plus (+) and minus (-)
+            symbols to indicate the amount you need to bet to win $100, or the
+            amount you can win for every 100 dollars wagered.</p>
         </div>
       }
       {props.description === 'Fractional odds' &&
         <div>
           <h2>Fractional odds</h2>
           <p>Fractional odds (aka “British” odds, “U.K.” odds, or “traditional”
-            odds) are popular among British and Irish bookies. They are
-            typically written with a slash (/).</p>
+            odds) are popular among British and Irish bookies. Fractional odds
+            represent the chances of losing versus the chances of winning in
+            terms of fractions. They are typically written with a slash (/).</p>
         </div>
       }
       {props.description === 'Decimal odds' &&
@@ -36,18 +39,16 @@ export const DescriptionPanel = (props: PropsType) => {
           <h2>Decimal odds</h2>
           <p>Decimal odds (aka “European” odds, “digital” odds, or “continental”
             odds) are popular in continental Europe, Australia, New Zealand, and
-            Canada. These are a bit easier to work with and understand. The
-            favorites and underdogs can be spotted instantaneously by looking at
-            the numbers.</p>
+            Canada. Decimal odds are shown as one number, which is the amount a
+            winning bet would collect on a $1 bet.</p>
         </div>
       }
       {props.description === 'Implied odds' &&
         <div>
           <h2>Implied odds</h2>
-          <p>Implied probability in sports betting markets is simply a
-            conversion of traditional odds into a percentage, but it also takes
-            into account the house edge and eliminates it to express the odds as
-            the ‘true odds’ of an event occurring.</p>
+          <p>Implied probability is a conversion of betting odds into a
+            percentage. It takes into account the bookmaker margin to express
+            the expected probability of an outcome occurring.</p>
         </div>
       }
       <Ball/>
