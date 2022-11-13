@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/odds-calculator/static/css/main.082c1c38.css",
+    "main.js": "/odds-calculator/static/js/main.bcc96b95.js",
+    "static/js/787.57cadb8e.chunk.js": "/odds-calculator/static/js/787.57cadb8e.chunk.js",
+    "static/media/grass.png": "/odds-calculator/static/media/grass.97ec20d0a32e92d7875f.png",
+    "static/media/ball.png": "/odds-calculator/static/media/ball.77ca7fc2f2b7681c3d70.png",
+    "index.html": "/odds-calculator/index.html",
+    "main.082c1c38.css.map": "/odds-calculator/static/css/main.082c1c38.css.map",
+    "main.bcc96b95.js.map": "/odds-calculator/static/js/main.bcc96b95.js.map",
+    "787.57cadb8e.chunk.js.map": "/odds-calculator/static/js/787.57cadb8e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.082c1c38.css",
+    "static/js/main.bcc96b95.js"
+  ]
+}
